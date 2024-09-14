@@ -50,7 +50,7 @@ const TariffCard:FunctionComponent<TProps> = (props) => {
                     <li className={css.tariff_card_bottom_li}>{data.incl2}</li>
                     <li className={css.tariff_card_bottom_li}>{data.incl3}</li>
                 </ul>
-                <button className={css.tariff_card_bottom_btn}>{currentTarrife ? "Перейти в личный кабинет" : "Подробнее"}</button>
+                <button className={currentTarrife? css.tariff_card_bottom_btn : css.tariff_card_bottom_btn_blue}>{currentTarrife ? "Перейти в личный кабинет" : "Подробнее"}</button>
             </div>
         </div>
     )
