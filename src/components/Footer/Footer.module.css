@@ -1,0 +1,42 @@
+.footer {
+    background-color: #029491;
+    display: flex;
+    flex-direction: row;
+    height: 137px;
+    width: 1440px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.logo {
+    position: relative;
+    left: 60px;
+    height: 137px;
+    width: 141px;
+}
+
+.address {
+    width: 200px;
+    color: white;
+    text-align: right;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    margin: auto 40px;
+}
+
+@media screen and (max-width: 780px) {
+
+    .footer {
+        width: 100vw;
+    }
+
+    .logo {
+        left: 20px;
+    }
+
+    .address {
+        margin: auto 20px;
+    }
+        
+}

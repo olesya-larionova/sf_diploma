@@ -1,0 +1,300 @@
+.tariffes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tariff_card {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.tariff_card_top {
+    width: 415px;
+    height: 132px;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #FFB64F;
+    display: flex;
+    flex-direction: row;
+        
+}
+
+.tariff_card_top_left {
+    width: 100%;
+}
+    
+.tariff_card_top_left_title {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36.31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 5% 0px 0px 10%;
+
+}
+
+.tariff_card_text {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 5% 0px 0px 10%;
+}
+
+.tariff_card_top_right {
+    display: flex;
+}
+
+.tariff_card_top_right_img {
+    width: 92px;
+    height: 83px;
+    padding: 5% 5% 0px 0px;
+}
+
+.tariff_card_bottom {
+    width: 415px;
+    height: 408px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.tariff_card_bottom_img {
+    width: 134px;
+    height: 24px;
+    margin: 5% 5% 0% auto;
+}
+
+.tariff_card_bottom_ul {
+    list-style-image: url("./markerGreen.svg");
+    margin-left: 5%;
+}
+
+.tariff_card_bottom_li {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.01em;
+    text-align: left;
+
+}
+.tariff_card_bottom_title {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    margin: 50px 0px 0px 10%;
+}
+
+.tariff_card_bottom_btn {
+    width: 355px;
+    height: 60px;
+    align-self: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.prices {
+    display: flex;
+    flex-direction: row;
+    margin: 0% 0% 0% 10%;
+    align-items: center;
+    height: 40px;
+}
+
+.price_activ {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36.31px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #000;
+    padding-right: 20px;
+    margin: 0% 0% 0% 0%;
+}
+
+.price_past {
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30.26px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-decoration: line-through;
+    color: #000;
+    opacity: 50%;
+    margin: 0% 0% 0% 0%;
+
+}
+
+@media screen and (max-width: 780px) {
+
+    .tariffes {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tariff_card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+        margin-bottom: 20px;
+    } 
+    
+    .tariff_card_top {
+        width: 100%;
+        height: 132px;
+        border-radius: 10px 10px 0px 0px;
+        background-color: #FFB64F;
+        display: flex;
+        flex-direction: row;
+            
+    }
+    
+    .tariff_card_top_left {
+        width: 100%;
+    }
+        
+    /*.tariff_card_top_left_title {
+        font-family: Inter;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36.31px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin: 5% 0px 0px 10%;
+    
+    }
+    
+    .tariff_card_text {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21.78px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin: 5% 0px 0px 10%;
+    }
+    
+    .tariff_card_top_right {
+        display: flex;
+    }
+    
+    .tariff_card_top_right_img {
+        width: 92px;
+        height: 83px;
+        padding: 5% 5% 0px 0px;
+    }*/
+    
+    .tariff_card_bottom {
+        width: 100%;
+        height: 408px;
+        border-radius: 0px 0px 10px 10px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+   /* .tariff_card_bottom_img {
+        width: 134px;
+        height: 24px;
+        margin: 5% 5% 0% auto;
+    }
+    
+    .tariff_card_bottom_ul {
+        list-style-image: url("./markerGreen.svg");
+        margin-left: 5%;
+    }*/
+    
+    .tariff_card_bottom_li {
+        font-family: Inter;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.78px;
+        letter-spacing: 0.01em;
+        text-align: left;
+    
+    }
+    /*.tariff_card_bottom_title {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24.2px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        margin: 50px 0px 0px 10%;
+    }*/
+    
+    .tariff_card_bottom_btn {
+        width: 286px;
+        height: 60px;
+        border: none;
+        border-radius: 5px;
+        align-self: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24.2px;
+        letter-spacing: 0.01em;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    
+    .prices {
+        display: flex;
+        flex-direction: row;
+        margin: 0% 0% 0% 10%;
+        align-items: center;
+        height: 40px;
+    }
+    
+    .price_activ {
+        font-family: Inter;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36.31px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        color: #000;
+        padding-right: 20px;
+        margin: 0% 0% 0% 0%;
+    }
+    
+    .price_past {
+        font-family: Inter;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 30.26px;
+        letter-spacing: 0.01em;
+        text-align: left;
+        text-decoration: line-through;
+        color: #000;
+        opacity: 50%;
+        margin: 0% 0% 0% 0%;
+    
+    }
+
+}

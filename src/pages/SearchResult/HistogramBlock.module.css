@@ -1,0 +1,93 @@
+.rtable {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    /*overflow-x: none;*/
+    white-space: nowrap;
+    border-collapse: collapse;
+    border: 2px solid rgba(2, 148, 145, 1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-spacing: 0;
+}
+
+.rtable th {
+
+    background-color: rgba(2, 148, 145, 1);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    padding-left: 5px;
+    color: white;
+    width: 133px;
+    height: 53px;
+}
+
+.rtable td{
+    padding: 0px 5px 0px 5px;
+    width: 133px;
+    text-align: center;
+    width: 133px;
+    height: 53px;
+
+}
+
+.rtable th,
+.rtable td {
+  padding: 5px 5px 5px 5px;
+}
+
+@media screen and (min-width: 781px) {
+
+    .rtable {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-width: 100%;
+    }
+
+    .rtable thead {
+    display: flex;
+    flex-direction: column;  
+    /*  min-width: min-content;*/
+    }
+
+    .rtable tbody {
+    display: flex;
+    flex-direction: row;
+    }
+
+    .rtable tr {
+    display: flex;
+    flex-direction: column;
+    min-width: min-content;
+    }
+
+    .rtable td,
+    .rtable th {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 144px;
+    }
+
+    .rtable td {
+        border-right: 2px solid #D4D4D4;        
+    }    
+    
+    /* дизайнеры - извращенцы, ну нате вам */
+
+    .rtable td:first-of-type {
+        border-image: linear-gradient(to top, #D4D4D4, #D4D4D4 75%, white 25%) 1;
+        /*border-image: linear-gradient(to bottom, white 0%, grey 100%) 1; /* а так красивее было бы */
+    }
+
+    .rtable td:last-of-type {
+        border-image: linear-gradient(to bottom, #D4D4D4, #D4D4D4 75%, white 25%) 1;
+        /*border-image: linear-gradient(to top, white 0%, grey 100%) 1; */
+    }
+
+}

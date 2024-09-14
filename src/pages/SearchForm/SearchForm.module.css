@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Inter, Ferry, Arial, Helvetica, sans-serif;
+}
+
+.main {
+    min-height: calc(100vh - 137px - 93px);
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.search_form_section_1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.search_form_section_2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.search_form_section_title {
+    width: 800px;
+    height: 215px;
+    padding-left: 60px;
+}
+
+.search_form_title {
+    font-family: Ferry;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: rgba(0, 0, 0, 1);    
+    margin: 0px;
+}
+
+.search_form_text {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.2px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
+}
+
+.search_form_data_form {
+    width: 870px;
+    height: 540px;
+    padding-left: 40px;
+    padding-top: 40px;
+    margin-left: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    border-radius: 10px;
+}
+
+.data_form_left {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inn_ton_doc_calendar {
+    width: 242px;
+    height: 43px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 1px solid rgba(199, 199, 199, 1);
+}
+
+.inn_ton_doc_calendar:focus {
+    outline:none;
+}
+
+.text_inn_ton_doc_calendar_chek {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.78px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+
+.calendar {
+    width: 176px;
+    height: 43px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(199, 199, 199, 1)
+}
+
+.search_btn {
+    width: 305px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(89, 112, 255, 1);
+    opacity: 0.5;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26.63px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: white;
+    margin-left: 100px;
+    margin-top: 100px;
+    cursor: not-allowed;
+
+}
+
+.text_chek {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.94px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: rgba(148, 148, 148, 1);
+    padding-left: 100px;
+}
+
+.search_form_section_img_1 {
+    margin-top: 70px;
+    margin-left: 130px;
+}
+
+.search_form_section_img_2 {
+    margin-top: 100px;
+    margin-left: 130px;
+}
+
+.search_form_section_img_3 {
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.inn_ton_doc_calendar_error {
+    width: 242px;
+    text-align: center;
+    font-size: 12px;
+    color: red;
+    margin-bottom: 15px;
+    min-height: 16px;
+}
+
+@media screen and (max-width: 780px) {
+ 
+    .main {
+        width: 100vw;
+    }
+
+    .search_form_section_title {
+        width: 360px;
+        height: 250px;
+        padding-left: 20px;
+    }
+    
+    .search_form_title {
+        font-family: Ferry;
+        font-size: 28px;
+        font-weight: 900;
+        line-height: 33.5px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: rgba(0, 0, 0, 1);    
+        margin: 0px;
+    }
+    
+    .search_form_text {
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        text-align: left;
+    
+    }
+
+    .search_form_section_img_1 {
+        margin-left: 20px;
+     }
+
+    .search_form_section_img_2 {
+       display: none;
+    }
+
+    .search_form_section_2 {
+        width: calc(100vw - 50px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search_form_data_form {
+        width: calc(100vw - 50px);
+        padding-left: 20px;
+        padding-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        overflow:auto;
+       
+    }
+
+    .search_btn {
+        width: 335px;
+        height: 60px;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .text_chek {
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .search_form_section_img_3 {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .img_3 {
+        width: 370px;
+    }
+
+
+}
