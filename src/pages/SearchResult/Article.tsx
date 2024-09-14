@@ -65,7 +65,6 @@ function getTextFromMarkup(xmlString:string):string {
 function getImgSrc(xmlString:string):string {
     
     const pattern = /&lt;img src="(.*?)"&gt;/;
-    console.log("Адрес картинки ===>");
     const found = xmlString.match(pattern);
     return found ? found[1] : "/img/document_img.png";
 }

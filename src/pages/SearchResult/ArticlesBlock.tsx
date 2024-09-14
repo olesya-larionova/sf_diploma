@@ -3,7 +3,6 @@ import css from './SearchResult.module.css'
 import { TDocument } from "../../AppContext";
 
 function ArticlesBlock(props: {articles:TDocument[]}) {
-    console.log(props.articles)
     return (
         <section className={css.section_3}>
             <p className={css.title}>Список документов</p>
