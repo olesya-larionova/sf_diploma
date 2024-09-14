@@ -1,7 +1,10 @@
 import { Link, useNavigate } from 'react-router-dom';
+import { useEffect, useContext } from 'react';
+import ReactDOM  from 'react-dom';
 import css from './Homepage.module.css';
 import Slider from '../../components/Slider/Slider';
 import Tariffes from '../../components/Tariffes/Tariffes';
+import App from "../../App"
 
 type TProps = {
     formtype:String
@@ -10,13 +13,16 @@ type TProps = {
 function Homepage(props:TProps) {
 
     const navigate = useNavigate();
-
-    if(props.formtype === "logout") {
-        localStorage.removeItem("token");
-        localStorage.removeItem("expire");
-        navigate("/");
-        navigate(0); // принудительно перерендерить страницу
-    }
+    
+    useEffect(() => {
+        if (props.formtype === "logout") {
+            localStorage.removeItem("token");
+            localStorage.removeItem("expire");
+            navigate('/');
+            const rootElement = document.getElementById("root");
+            ReactDOM.render(<App />, rootElement);
+        } 
+    });
 
     return (
         <>
