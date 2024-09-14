@@ -87,10 +87,12 @@ function LoginForm(props:TProps) {
                 if ((refs.loginNameRef.current.value && refs.loginPassRef.current.value)) {
                     button.disabled = false;
                     button.style.cursor = "pointer";
+                    button.style.opacity = "1";
                     button.onclick = doLogin;
                 } else {
                     button.disabled = true;
                     button.style.cursor = "not-allowed";
+                    button.style.opacity = "0.5";
                 }
             }
             return false;
